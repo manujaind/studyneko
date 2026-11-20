@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NekoJournal — a cozy study journal for Windows</title>
+<meta name="description" content="NekoJournal is a cozy study journal for Windows. Write down what you learned, how you feel and what comes next, with a little cat beside you. Download every version here.">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbf6ef; --card:#ffffff; --ink:#2a2423; --muted:#8a7f78; --line:#eadfd3;
+  --pink:#e58f88; --pink-soft:#fbe4df; --sage:#6f9d76; --sage-soft:#e4efe3; --cream:#f6e7d2;
+  --shadow:0 12px 32px rgba(80,50,40,.08); --glow:#ffd9a0;
+}
+:root[data-theme="dark"]{
+  --bg:#171413; --card:#221d1c; --ink:#f4ece3; --muted:#a69b92; --line:#352e2c;
+  --pink:#f2a9a1; --pink-soft:#3a2a29; --sage:#9bc4a0; --sage-soft:#26322a; --cream:#f3e3cc;
+  --shadow:0 12px 32px rgba(0,0,0,.4); --glow:#ffcf87;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Nunito","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;transition:background .3s,color .3s}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+
+/* nav */
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem}
+.brand img{width:34px;height:34px;border-radius:10px;display:block}
+.brand b{color:var(--pink)}
+.links{display:flex;align-items:center;gap:22px;font-weight:700;font-size:.95rem;color:var(--muted)}
+.links a:hover{color:var(--ink)}
+.icon-btn{border:1px solid var(--line);background:var(--card);color:var(--ink);width:38px;height:38px;border-radius:50%;cursor:pointer;font-size:1rem}
+@media(max-width:560px){.links a{display:none}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:800;font-size:.98rem;border:1px solid transparent;cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--pink);color:#2a1a18;box-shadow:0 8px 22px rgba(229,143,136,.3)}
+.btn.ghost{background:var(--card);color:var(--ink);border-color:var(--line)}
+.btn.small{padding:9px 18px;font-size:.88rem}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1.05fr;gap:30px;align-items:center;padding:34px 0 30px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--pink);font-weight:800;font-size:.85rem;margin-bottom:14px}
+.eyebrow svg{width:16px;height:16px;fill:var(--pink)}
+h1{font-size:clamp(2.1rem,5vw,3.2rem);line-height:1.12;font-weight:800;letter-spacing:-.02em}
+h1 span{color:var(--pink)}
+.lead{color:var(--muted);font-size:1.08rem;margin:16px 0 26px;max-width:28em}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.note{margin-top:14px;color:var(--muted);font-size:.85rem}
+.scene{width:100%;height:auto;display:block}
+@media(max-width:820px){.hero{grid-template-columns:1fr;text-align:center}.lead{margin-left:auto;margin-right:auto}.cta{justify-content:center}.scene{max-width:440px;margin:0 auto}}
+
+.paws{display:flex;justify-content:center;gap:14px;padding:8px 0;opacity:.55}
+.paws svg{width:18px;height:18px;fill:var(--pink)}
+.paws svg:nth-child(even){fill:var(--sage);transform:translateY(5px)}
+
+section{padding:44px 0}
+.head{text-align:center;margin-bottom:30px}
+.head h2{font-size:clamp(1.5rem,3.5vw,2rem);font-weight:800;letter-spacing:-.01em}
+.head p{color:var(--muted);margin-top:6px}
+
+/* features */
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:26px 32px}
+@media(max-width:760px){.feats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.feats{grid-template-columns:1fr}}
+.feat{text-align:center}
+.feat .ic{width:54px;height:54px;border-radius:18px;margin:0 auto 12px;display:grid;place-items:center;background:var(--pink-soft)}
+.feat:nth-child(even) .ic{background:var(--sage-soft)}
+.feat .ic svg{width:28px;height:28px;stroke:var(--ink);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.feat h3{font-size:1rem;font-weight:800}
+.feat p{color:var(--muted);font-size:.9rem;margin-top:2px}
+
+/* versions */
+.sleepy{display:block;width:120px;margin:0 auto 6px}
+.versions{max-width:720px;margin:0 auto;display:grid;gap:14px}
+.ver{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px 24px;display:grid;grid-template-columns:1fr auto;gap:10px 20px;align-items:center;box-shadow:var(--shadow)}
+.ver.latest{border-color:var(--pink)}
+.ver .top{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.ver h3{font-size:1.25rem;font-weight:800}
+.badge{font-size:.72rem;font-weight:800;padding:3px 11px;border-radius:999px;background:var(--pink);color:#2a1a18}
+.meta{color:var(--muted);font-size:.85rem}
+.ver ul{grid-column:1;list-style:none;margin-top:4px}
+.ver li{color:var(--muted);font-size:.93rem;padding-left:20px;position:relative}
+.ver li::before{content:"";position:absolute;left:0;top:.5em;width:8px;height:8px;border-radius:50%;background:var(--sage-soft);border:2px solid var(--sage)}
+.ver .act{grid-row:1 / span 2;grid-column:2}
+.soon{color:var(--muted);font-weight:700;font-size:.9rem}
+@media(max-width:560px){.ver{grid-template-columns:1fr}.ver .act{grid-row:auto;grid-column:1}}
+.hint{text-align:center;color:var(--muted);font-size:.85rem;margin-top:20px}
+
+/* sibling card */
+.sib{max-width:720px;margin:0 auto;grid-template-columns:auto 1fr auto}
+@media(max-width:560px){.sib{grid-template-columns:1fr!important}}
+.sib .mini{width:64px;height:64px;border-radius:16px;background:var(--sage);display:grid;place-items:center}
+
+footer{padding:34px 0 46px;text-align:center;color:var(--muted);font-size:.9rem}
+footer a{color:var(--pink);font-weight:700}
+
+@media(prefers-reduced-motion:no-preference){
+  .flame{transform-origin:392px 232px;animation:flame 2.6s ease-in-out infinite}
+  .breathe{transform-origin:240px 300px;animation:breathe 4s ease-in-out infinite}
+  .twinkle{animation:twinkle 3s ease-in-out infinite}
+}
+@keyframes flame{0%,100%{transform:scale(1)}50%{transform:scale(1.08,1.15)}}
+@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.015,1.025)}}
+@keyframes twinkle{0%,100%{opacity:.3}50%{opacity:1}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="paw" viewBox="0 0 24 24"><ellipse cx="12" cy="16" rx="6.2" ry="5"/><circle cx="4.8" cy="10.5" r="2.7"/><circle cx="9.8" cy="5.8" r="2.7"/><circle cx="16.2" cy="5.8" r="2.7"/><circle cx="21" cy="10.5" r="2.7"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap nav-in">
+    <a href="#top" class="brand"><img src="data:image/png;base64,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" alt=""><span>Neko<b>Journal</b></span></a>
+    <div class="links">
+      <a href="#features">Features</a>
+      <a href="#versions">Versions</a>
+      <button class="icon-btn" id="theme" aria-label="Toggle light or dark mode">☀️</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <span class="eyebrow"><svg><use href="#paw"/></svg> A cozy study journal for Windows</span>
+      <h1>Write it down,<br>with <span>Neko</span> beside you.</h1>
+      <p class="lead">A quiet little journal for your study life. Note what you learned, how the day felt and what comes next, one page at a time.</p>
+      <div class="cta">
+        <a href="#versions" class="btn primary" id="hero-dl">⬇ Download</a>
+        <a href="#versions" class="btn ghost">All versions</a>
+      </div>
+      <p class="note">For Windows 10 &amp; 11</p>
+    </div>
+
+    <!-- cozy night journaling scene -->
+    <svg class="scene" viewBox="0 0 480 380" role="img" aria-label="A cream cat holding an open journal beside a candle, with the moon and stars outside the window">
+      <ellipse cx="240" cy="205" rx="222" ry="168" fill="var(--pink-soft)"/>
+      <!-- window -->
+      <rect x="40" y="40" width="104" height="124" rx="16" fill="#2b2a44" stroke="var(--card)" stroke-width="6"/>
+      <circle cx="78" cy="84" r="16" fill="#f8e7b0"/><circle cx="86" cy="78" r="14" fill="#2b2a44"/>
+      <circle class="twinkle" cx="118" cy="70" r="2.2" fill="#f8e7b0"/><circle class="twinkle" cx="112" cy="122" r="2" fill="#f8e7b0" style="animation-delay:1s"/><circle class="twinkle" cx="76" cy="132" r="1.8" fill="#f8e7b0" style="animation-delay:2s"/>
+      <path d="M92 40v124M40 102h104" stroke="var(--card)" stroke-width="4"/>
+      <!-- paws -->
+      <use href="#paw" x="372" y="60" width="26" height="26" fill="var(--pink)" opacity=".5" transform="rotate(16 385 73)"/>
+      <use href="#paw" x="410" y="104" width="20" height="20" fill="var(--sage)" opacity=".55" transform="rotate(-12 420 114)"/>
+      <!-- candle glow -->
+      <ellipse cx="392" cy="240" rx="62" ry="54" fill="var(--glow)" opacity=".3"/>
+      <!-- desk -->
+      <rect x="28" y="296" width="424" height="24" rx="11" fill="#caa27c"/>
+      <rect x="72" y="320" width="14" height="46" rx="5" fill="#b58d68"/><rect x="394" y="320" width="14" height="46" rx="5" fill="#b58d68"/>
+      <!-- candle -->
+      <rect x="378" y="252" width="28" height="44" rx="6" fill="#f5eadb"/>
+      <rect x="374" y="292" width="36" height="6" rx="3" fill="#e0cdb4"/>
+      <path d="M392 252v-8" stroke="#6a5648" stroke-width="2.5" stroke-linecap="round"/>
+      <g class="flame"><path d="M392 218q-9 12-9 20a9 9 0 0 0 18 0q0-8-9-20z" fill="#ffb347"/><path d="M392 228q-4 6-4 10a4 4 0 0 0 8 0q0-4-4-10z" fill="#fff3c4"/></g>
+      <!-- tea -->
+      <rect x="96" y="266" width="38" height="30" rx="9" fill="#fff" stroke="#e3d8cb" stroke-width="2"/>
+      <path d="M134 273q15 0 15 10t-15 8" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M100 278h30" stroke="var(--pink)" stroke-width="4" stroke-linecap="round"/>
+      <!-- cat -->
+      <g class="breathe">
+        <ellipse cx="240" cy="270" rx="56" ry="48" fill="#f6dfc0"/>
+        <polygon points="204,176 205,132 237,162" fill="#f6dfc0"/><polygon points="276,176 275,132 243,162" fill="#f6dfc0"/>
+        <polygon points="209,168 210,146 228,162" fill="#f3b9a8"/><polygon points="271,168 270,146 252,162" fill="#f3b9a8"/>
+        <circle cx="240" cy="204" r="44" fill="#f6dfc0"/>
+        <path d="M240 164v10M230 166l2 8M250 166l-2 8" stroke="#e5be92" stroke-width="3" stroke-linecap="round"/>
+        <path d="M216 208q7-8 14 0M250 208q7-8 14 0" stroke="#5a4636" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <ellipse cx="240" cy="217" rx="3.6" ry="2.6" fill="#e59a8a"/>
+        <path d="M240 220q-5 6-10 2M240 220q5 6 10 2" stroke="#5a4636" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="212" cy="221" rx="9" ry="5" fill="#f4a99a" opacity=".65"/><ellipse cx="268" cy="221" rx="9" ry="5" fill="#f4a99a" opacity=".65"/>
+        <path d="M196 214l-17-3M196 220l-17 3M284 214l17-3M284 220l17 3" stroke="#d9c3a3" stroke-width="1.6" stroke-linecap="round"/>
+        <!-- open journal -->
+        <path d="M168 262q36-14 72 4q36-18 72-4v46q-36-14-72 4q-36-18-72-4z" fill="#fbf3e6" stroke="#e3d3bb" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M240 266v46" stroke="#e3d3bb" stroke-width="2"/>
+        <path d="M182 276q24-6 46 3M182 288q24-6 46 3M252 279q22-9 46-3M252 291q22-9 46-3" stroke="#d9c6aa" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="172" cy="270" rx="13" ry="9" fill="#f6dfc0" stroke="#e8c9a1" stroke-width="1.5"/>
+        <ellipse cx="308" cy="270" rx="13" ry="9" fill="#f6dfc0" stroke="#e8c9a1" stroke-width="1.5"/>
+      </g>
+      <!-- pencil -->
+      <g transform="rotate(-10 330 306)"><rect x="312" y="302" width="46" height="6" rx="3" fill="#e0bd6a"/><polygon points="358,302 368,305 358,308" fill="#f3d9b1"/></g>
+    </svg>
+  </div>
+</div>
+
+<div class="paws"><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg></div>
+
+<section id="features">
+  <div class="wrap">
+    <div class="head"><h2>A gentle place for your thoughts</h2></div>
+    <!-- NOTE: these features are placeholders. Edit them to match what NekoJournal really does. -->
+    <div class="feats">
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M9 9h6M9 13h6"/></svg></div><h3>Daily entries</h3><p>A fresh page every day for what you studied and learned.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5q3.5 3 7 0M9 9.5v.5M15 9.5v.5"/></svg></div><h3>Mood check-ins</h3><p>Note how the day felt, and look back on the good ones.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M8 3v4M16 3v4M4 10h16"/></svg></div><h3>Calendar view</h3><p>Browse past entries by date and keep your writing streak.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 12 12 3h8v8l-9 9z"/><circle cx="15.5" cy="8.5" r="1"/></svg></div><h3>Subjects &amp; tags</h3><p>Sort entries by subject so everything is easy to find.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div><h3>Search</h3><p>Find any note or idea in a moment.</p></div>
+      <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="3"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div><h3>Private</h3><p>Your journal is yours. Quiet, calm and just for you.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="paws"><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg><svg><use href="#paw"/></svg></div>
+
+<section id="versions">
+  <div class="wrap">
+    <svg class="sleepy" viewBox="0 0 120 70" aria-hidden="true">
+      <text class="twinkle" x="56" y="18" font-size="13" font-weight="800" fill="var(--muted)" font-family="Nunito,sans-serif">z</text>
+      <text class="twinkle" x="68" y="10" font-size="9" font-weight="800" fill="var(--muted)" font-family="Nunito,sans-serif" style="animation-delay:1s">z</text>
+      <path d="M96 52q20-2 12-20" stroke="#f6dfc0" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <ellipse cx="62" cy="50" rx="44" ry="18" fill="#f6dfc0"/>
+      <polygon points="18,40 18,26 30,34" fill="#f6dfc0"/><polygon points="44,40 44,26 32,34" fill="#f6dfc0"/>
+      <circle cx="31" cy="46" r="17" fill="#f6dfc0"/>
+      <path d="M23 46q3.5 3 7 0M33 46q3.5 3 7 0" stroke="#5a4636" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="32" cy="52" rx="2" ry="1.4" fill="#e59a8a"/>
+      <rect x="44" y="40" width="40" height="9" rx="4.5" fill="#9bc4a0"/>
+    </svg>
+    <div class="head"><h2>Download NekoJournal</h2><p>Every version is here. Pick the one you like.</p></div>
+    <div class="versions" id="list"></div>
+    <p class="hint">If Windows shows a SmartScreen warning, click <b>More info</b> then <b>Run anyway</b>.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="ver sib">
+      <div class="mini"><svg viewBox="0 0 32 32" width="40" height="40" aria-hidden="true"><polygon points="7,15 8,5 15,10" fill="#fff"/><polygon points="25,15 24,5 17,10" fill="#fff"/><circle cx="16" cy="18" r="9" fill="#fff"/><path d="M11.5 17.5q1.8-2 3.6 0M16.9 17.5q1.8-2 3.6 0" stroke="#5f8a62" stroke-width="1.6" fill="none" stroke-linecap="round"/><ellipse cx="16" cy="21" rx="1.4" ry="1" fill="#e59a8a"/></svg></div>
+      <div>
+        <div class="top"><h3>Also try StudyNeko</h3></div>
+        <div class="meta">A cozy study planner with a focus timer and Neko 🐾</div>
+      </div>
+      <div class="act" style="grid-row:auto;grid-column:auto">
+        <!-- TODO: replace with your StudyNeko page address -->
+        <a href="PASTE-STUDYNEKO-LINK-HERE" target="_blank" rel="noopener" class="btn small ghost">Visit StudyNeko →</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Made with 🐾 by <b>Your Name</b> · <a href="mailto:you@example.com">Send feedback</a></p>
+    <p style="margin-top:4px">© <span id="yr"></span> NekoJournal</p>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   ADD A NEW VERSION:
+   1. Upload your setup file (GitHub Releases link, or a file in a
+      "downloads" folder next to this page).
+   2. Copy one block below and paste it at the TOP of the list.
+   3. The first block is shown as "Latest".
+   Leave file as "" to show "Coming soon".
+   ============================================================ */
+const VERSIONS = [
+  {
+    version: "1.0.0",
+    date: "2026-11-20",
+    file: "",   // e.g. "downloads/NekoJournal-1.0.0.exe" or a GitHub release link
+    size: "",
+    notes: [
+      "First release"
+    ]
+  }
+];
+
+const list = document.getElementById('list');
+function fmt(d){ try{ return new Date(d + 'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}) }catch(e){ return d } }
+
+VERSIONS.forEach((v, i) => {
+  const card = document.createElement('div'); card.className = 'ver' + (i === 0 ? ' latest' : '');
+  const left = document.createElement('div');
+  const top = document.createElement('div'); top.className = 'top';
+  const h = document.createElement('h3'); h.textContent = 'Version ' + v.version; top.appendChild(h);
+  if (i === 0){ const b = document.createElement('span'); b.className = 'badge'; b.textContent = 'Latest'; top.appendChild(b); }
+  left.appendChild(top);
+  const meta = document.createElement('div'); meta.className = 'meta';
+  meta.textContent = [fmt(v.date), v.size].filter(Boolean).join(' · ');
+  left.appendChild(meta); card.appendChild(left);
+
+  const act = document.createElement('div'); act.className = 'act';
+  if (v.file){
+    const a = document.createElement('a'); a.href = v.file; a.setAttribute('download','');
+    a.className = 'btn small ' + (i === 0 ? 'primary' : 'ghost'); a.textContent = '⬇ Download'; act.appendChild(a);
+  } else {
+    const s = document.createElement('span'); s.className = 'soon'; s.textContent = 'Coming soon'; act.appendChild(s);
+  }
+  card.appendChild(act);
+
+  if (v.notes && v.notes.length){
+    const ul = document.createElement('ul');
+    v.notes.forEach(n => { const li = document.createElement('li'); li.textContent = n; ul.appendChild(li); });
+    card.appendChild(ul);
+  }
+  list.appendChild(card);
+});
+
+const hero = document.getElementById('hero-dl');
+if (VERSIONS[0] && VERSIONS[0].file){ hero.href = VERSIONS[0].file; hero.setAttribute('download',''); hero.textContent = '⬇ Download v' + VERSIONS[0].version; }
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+const root = document.documentElement, btn = document.getElementById('theme');
+function setTheme(t){ root.setAttribute('data-theme', t); btn.textContent = t === 'dark' ? '☀️' : '🌙'; try{ localStorage.setItem('nj-theme', t) }catch(e){} }
+let saved = null; try{ saved = localStorage.getItem('nj-theme') }catch(e){}
+setTheme(saved || 'dark');
+btn.addEventListener('click', () => setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'));
+</script>
+</body>
+</html>
